@@ -13,17 +13,24 @@
             Blog
           </nuxt-link>
         </li>
+              <li
+          v-for="(page, index) in pages"
+          :key="index"
+          class="block font-medium px-4 py-1 md:p-2 lg:px-4"
+        >
+          <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
+        </li>
           <li>
             <a href="#">
               <nuxt-link 
-                ><span class="title">About Us</span></nuxt-link
+                ><span>About Us</span></nuxt-link
               ></a
             >
             <ul>
-              <li><nuxt-link >Blog</nuxt-link></li>
+              <li><nuxt-link to="/blog/cat">Blog</nuxt-link></li>
               <li>
                 <span>
-                  <nuxt-link>FAQ</nuxt-link>
+                  <nuxt-link to="/blog/cat">FAQ</nuxt-link>
                 </span>
               </li>
             </ul>
@@ -35,13 +42,7 @@
           </nuxt-link>
         </li> -->
 
-        <li
-          v-for="(page, index) in pages"
-          :key="index"
-          class="block font-medium px-4 py-1 md:p-2 lg:px-4"
-        >
-          <nuxt-link :to="`/${page.slug}`">{{ page.title }}</nuxt-link>
-        </li>
+  
       </ul>
     </nav>
   </header>
