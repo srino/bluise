@@ -57,7 +57,7 @@ export const actions: Actions<State, State> = {
   },
 
   async nuxtServerInit({ dispatch }): Promise<void> {
-    await Promise.all([dispatch('GET_PAGES_LIST'), dispatch('GET_POSTS_LIST')],dispatch('GET_SERVICE_LIST')]);
+    await Promise.all([dispatch('GET_PAGES_LIST'), dispatch('GET_POSTS_LIST'),dispatch('GET_SERVICE_LIST')]);
   },
 };
 
