@@ -13,7 +13,7 @@
             Blog
           </nuxt-link>
         </li>
-                    <li class="last">
+          <li>
             <a href="#">
               <nuxt-link 
                 ><span class="title">About Us</span></nuxt-link
