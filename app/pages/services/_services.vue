@@ -42,7 +42,7 @@ export default class BlogPost extends Vue {
     }
 
     try {
-      const post = require(`@/content/blog/${params.slug}.md`);
+      const post = require(`@/content/services/${params.slug}.md`);
 
       return {
         post,
