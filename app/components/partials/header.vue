@@ -9,15 +9,27 @@
     <nav class="nav ml-auto">
       <ul class="flex flex-row items-center sm:mt-4 sm:pt-4 md:mt-0 md:pt-0 md:mr-4 lg:mr-8">
         <li>
-          <nuxt-link to="/blog/cat" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
+          <nuxt-link to="/blog" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
             Blog
           </nuxt-link>
         </li>
-          <li>
+            <li>
+                <a href="#">Services</a>
+                <div>
+                  <nuxt-link to="/blog/cat">For Owners</nuxt-link>
+                  <nuxt-link to="/blog/la-croix">For Tenants</nuxt-link>
+                  <nuxt-link to="#">For NRI/Investors</nuxt-link>
+                  <nuxt-link to="#">For Agents</nuxt-link>
+                  <nuxt-link to="#">For Builders</nuxt-link>
+                  <nuxt-link to="#">For Corporates</nuxt-link>
+                  <nuxt-link to="#">For Franchisee</nuxt-link>
+                </div>
+              </li>
+          <!-- <li>
           <nuxt-link to="/services" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
             Services
           </nuxt-link>
-        </li>
+        </li> -->
 
         <li
           v-for="(page, index) in pages"
