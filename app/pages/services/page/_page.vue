@@ -1,7 +1,7 @@
 <script>
-import Blog from '../index.vue';
+import Services from '../index.vue';
 
 export default {
-  extends: Blog,
+  extends: Services,
 };
 </script>
