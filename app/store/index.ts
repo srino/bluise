@@ -29,6 +29,7 @@ export const mutations: MutationTree<State> = {
 interface Actions<S, R> extends ActionTree<S, R> {
   GET_PAGES_LIST(context: ActionContext<S, R>): Promise<void | Error>;
   GET_POSTS_LIST(context: ActionContext<S, R>): Promise<void | Error>;
+  GET_SERVICE_LIST(context: ActionContext<S, R>): Promise<void | Error>;
   nuxtServerInit(context: ActionContext<S, R>): void;
 }
 
@@ -39,11 +40,11 @@ export const actions: Actions<State, State> = {
     const posts = await getContent({ context, prefix: 'blog' });
     commit('SET_POSTS', posts);
   },
-  async GET_POSTS_LIST({ commit }): Promise<void | Error> {
+  async GET_SERVICE_LIST({ commit }): Promise<void | Error> {
     // Use webpack to search the blog directory matching .json files
     const context = await require.context('@/content/services/', false, /\.json$/);
-    const posts = await getContent({ context, prefix: 'services' });
-    commit('SET_POSTS', posts);
+    const services = await getContent({ context, prefix: 'services' });
+    commit('SET_POSTS', services);
   },
   async GET_PAGES_LIST({ commit }): Promise<void | Error> {
     // Use webpack to search the blog directory matching .json files
@@ -56,7 +57,7 @@ export const actions: Actions<State, State> = {
   },
 
   async nuxtServerInit({ dispatch }): Promise<void> {
-    await Promise.all([dispatch('GET_PAGES_LIST'), dispatch('GET_POSTS_LIST')]);
+    await Promise.all([dispatch('GET_PAGES_LIST'), dispatch('GET_POSTS_LIST')],dispatch('GET_SERVICE_LIST')]);
   },
 };
 
