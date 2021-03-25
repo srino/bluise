@@ -39,7 +39,12 @@ export const actions: Actions<State, State> = {
     const posts = await getContent({ context, prefix: 'blog' });
     commit('SET_POSTS', posts);
   },
-
+  async GET_POSTS_LIST({ commit }): Promise<void | Error> {
+    // Use webpack to search the blog directory matching .json files
+    const context = await require.context('@/content/services/', false, /\.json$/);
+    const posts = await getContent({ context, prefix: 'services' });
+    commit('SET_POSTS', posts);
+  },
   async GET_PAGES_LIST({ commit }): Promise<void | Error> {
     // Use webpack to search the blog directory matching .json files
     const context = await require.context('@/content/pages/', false, /\.json$/);
