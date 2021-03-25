@@ -15,7 +15,6 @@
         </li>
             <li>
                 <a href="#">Services</a>
-                <div>
                   <nuxt-link to="/blog/cat">For Owners</nuxt-link>
                   <nuxt-link to="/blog/la-croix">For Tenants</nuxt-link>
                   <nuxt-link to="#">For NRI/Investors</nuxt-link>
@@ -23,8 +22,8 @@
                   <nuxt-link to="#">For Builders</nuxt-link>
                   <nuxt-link to="#">For Corporates</nuxt-link>
                   <nuxt-link to="#">For Franchisee</nuxt-link>
-                </div>
               </li>
+               
           <!-- <li>
           <nuxt-link to="/services" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
             Services
