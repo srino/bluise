@@ -15,44 +15,17 @@
         </li>
                     <li class="last">
             <a href="#">
-              <nuxt-link to="/about"
+              <nuxt-link 
                 ><span class="title">About Us</span></nuxt-link
               ></a
             >
             <ul>
-              <li><nuxt-link to="/blogs">Blog</nuxt-link></li>
+              <li><nuxt-link >Blog</nuxt-link></li>
               <li>
                 <span>
-                  <nuxt-link to="/faq">FAQ</nuxt-link>
+                  <nuxt-link>FAQ</nuxt-link>
                 </span>
               </li>
-              <li>
-                <span>
-                  <nuxt-link to="/testimonials">Testimonials</nuxt-link>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <nuxt-link to="/careers">Careers</nuxt-link>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <nuxt-link to="/referfriend">Refer a Friend</nuxt-link>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <nuxt-link to="/franchise-enquiry"
-                    >Franchise Enquiry</nuxt-link
-                  >
-                </span>
-              </li>
-              <li>
-                <span>
-                  <nuxt-link to="/contacts">Contact Us</nuxt-link>
-                </span>
-              </li> 
             </ul>
           </li>
                
