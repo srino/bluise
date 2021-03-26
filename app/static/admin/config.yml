@@ -78,7 +78,18 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: 'Published At', name: publishedAt, widget: date, format: 'Do MMM YYYY' }
       - { label: Content, name: content, widget: markdown }
-      - { label: Testimonials, name: testimonials,collection: "blogcategories",widget: markdown , create: true}
+      
+- label: "Testimonials"
+name: "testimonials"
+widget: "list"
+summary: '{{fields.quote}} - {{fields.author.name}}'
+fields:
+  - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+  - label: Author
+    name: author
+    widget: object
+    fields:
+      - {label: Name, name: name, widget: string, default: "Emmet"}
       - { label: 'Featured Image', name: featuredImage, widget: image, required: false }
       - { label: 'SEO Description', name: seoDescription, widget: text, required: false }
       - { label: 'SEO Meta Image', name: seoMetaImage, widget: image, required: false }
