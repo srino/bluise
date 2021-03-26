@@ -85,6 +85,6 @@ collections:
         name: "testimonials"
         widget: "list"
         fields:
-      - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
   
  
