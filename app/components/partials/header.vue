@@ -25,6 +25,11 @@
             Services
           </nuxt-link>
         </li>
+           <li>
+          <nuxt-link to="/ourwork" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
+            Services1
+          </nuxt-link>
+        </li>
                
           <!-- <li>
           <nuxt-link to="/services" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
