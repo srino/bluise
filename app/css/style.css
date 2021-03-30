@@ -1,10 +1,10 @@
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500); */
 
 
 
@@ -153,7 +153,6 @@ p strong {
 .btn-grey:hover, .btn-grey.active{
 	background:#ec6b17;
 	color:#fff;
-}{
 	background:#ec6b17;
 	color:#fff;
 }
@@ -1639,7 +1638,7 @@ font-size: 18px;
 ul.dropdown-menu li a{
 
     font-weight: 400 !important;
-   letter-spacing: 0px; !important;
+   letter-spacing: 0px !important;
     color: #000 !important;
 	    text-transform: none !important;
 }
