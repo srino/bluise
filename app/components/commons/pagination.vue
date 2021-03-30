@@ -17,8 +17,12 @@
     </div>
 
     <div class="hidden md:flex">
-      <nuxt-link to="/blog" class="pagination-link"> 1 </nuxt-link>
-      <nuxt-link to="/services" class="pagination-link"> 2 </nuxt-link>
+      <nuxt-link to="/blog" class="pagination-link">
+        1
+      </nuxt-link>
+      <nuxt-link to="/services" class="pagination-link">
+        2
+      </nuxt-link>
       <nuxt-link
         v-for="page in paginationMax"
         :key="page + 1"
