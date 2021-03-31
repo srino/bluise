@@ -1,6 +1,6 @@
 <template>
   <section class="blog">
-    <div style="color:#fff;background-color:#c9302c;" class="py-8 md:py-16 text-center" >
+    <div style="color: white; background: -webkit-linear-gradient(-45deg, rgba(22,23,75,1) 0%, rgba(162,81,92,1) 100%);" class="py-8 md:py-16 text-center" >
       <h1 class="text-lg md:text-xl lg:text-4xl xl:text-6xl">Blog</h1>
       <h2 class="text-base md:text-lg lg:text-xl xl:text-2xl">
         Slow-carb messenger bag mlkshk fingerstache four dollar toast.
@@ -8,28 +8,6 @@
     </div>
 
     <div class="flex flex-wrap md:-mx-4 pb-20">
-         <div class="col-md-4 col-sm-6 col-xs12 html portfolio-item">
-              <!--portfolioModal1-->
-			        <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
-
-                        <div class="portfolio-hover">
-
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-
-                        </div>
-						 <span class="portfolio-caption">
-                        <h3 class="text-primary">Marketplace for US Real Estate Investments</h3>
-                  <p class="text-tertiary">Designed and developed a financial marketplace and what if analysis for high net worth individuals investing in Real estate.</p>
-						<img src="img/portfolio/3.jpg" class="img-responsive img-float" alt="">
-                    </span>
-
-
-                    </a>
-
-
-            </div>
       <div v-for="(post, index) in posts" :key="index" class="w-full md:w-1/2 my-4 md:px-4">
         <div class="post">
           <nuxt-link :to="`/blog/${post.slug}`">
