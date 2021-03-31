@@ -13,10 +13,6 @@
             Blog
           </nuxt-link>
         </li>
-           <li>
-         <a href="about.html">
-         abouts</a>
-        </li>
               <li
           v-for="(page, index) in pages"
           :key="index"
@@ -36,7 +32,7 @@
         </li>
                    <li>
           <nuxt-link to="/contact" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
-            Our Work
+            Contact Us
           </nuxt-link>
         </li>
                
