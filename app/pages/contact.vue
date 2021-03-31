@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     sendEmail: (e) => {
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, {
+         emailjs.sendForm('service_jd7lx4d', 'template_2q7avcv', e.target,'user_Gt6C3kzjuSxAyQgkdcR3k', {
           name: this.name,
           email: this.email,
           message: this.message
