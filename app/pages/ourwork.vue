@@ -1,12 +1,12 @@
 <template>
-  <section class="blog">
+  <section>
     <div style="color: white; background: -webkit-linear-gradient(-45deg, rgba(22,23,75,1) 0%, rgba(162,81,92,1) 100%);" class="py-8 md:py-16 text-center">
       <h2 style="font-size:34px" class="text-lg md:text-xl lg:text-4xl xl:text-6xl">A sampling of our work</h2>
       <h3 class="text-base md:text-lg lg:text-xl xl:text-2xl">
         Slow-carb messenger bag mlkshk fingerstache four dollar toast.
       </h3>
     </div>
-    <div class="h-64 grid grid-rows grid-flow-col gap-3">
+    <div style="margin-top:14px" class="h-64 grid grid-rows grid-flow-col gap-3">
     <div>
   			        <a href="#portfolioModal" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -94,7 +94,6 @@
                     </a>
      </div>
     </div>
-    <Pagination v-if="totalPages > 1" :current-page="currentPage" :total-pages="totalPages" />
   </section>
 </template>
 

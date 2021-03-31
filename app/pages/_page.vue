@@ -10,7 +10,11 @@
        <div style="text-align: center;margin-top: 30px;" class="grid grid-cols-3 gap-4">
          <div>
   			   <div class="icon">
-              <img style="height:67px" src="../img/number-img1.png">
+              <img
+              :alt="page.title"
+              class="w-full"
+              :src="page.avatar || 'https://source.unsplash.com/random/640x340'"
+            />
            </div>
               <strong>100+</strong>
               <p>Years of collective Experience</p>
