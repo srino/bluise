@@ -15,9 +15,9 @@
 <div class="container">
        <form class="contact-form" @submit.prevent="sendEmail">
     <label>Name</label>
-    <input type="text" name="user_name">
+    <input type="text" name="name">
     <label>Email</label>
-    <input type="email" name="user_email">
+    <input type="email" name="email">
     <label>Message</label>
     <textarea name="message"></textarea>
     <input type="submit" value="Send">
@@ -41,12 +41,23 @@
 <script>
 
 import emailjs from 'emailjs-com';
+
 export default {
   name: 'ContactUs',
-
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
   methods: {
     sendEmail: (e) => {
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID', {
+          name: this.name,
+          email: this.email,
+          message: this.message
+        })
         .then((result) => {
             console.log('SUCCESS!', result.status, result.text);
         }, (error) => {
