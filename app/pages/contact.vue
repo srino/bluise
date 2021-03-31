@@ -13,31 +13,15 @@
         <div class="home__welcome markdown" />
 
 <div class="container">
-        <form>
-          <label>Name</label>
-          <input 
-            type="text" 
-            v-model="name"
-            name="name"
-            placeholder="Your Name"
-          >
-          <label>Email</label>
-          <input 
-            type="email" 
-            v-model="email"
-            name="email"
-            placeholder="Your Email"
-            >
-          <label>Message</label>
-          <textarea 
-            name="message"
-            v-model="message"
-            cols="30" rows="5"
-            placeholder="Message">
-          </textarea>
-          
-          <input type="submit" value="Send">
-        </form>
+       <form class="contact-form" @submit.prevent="sendEmail">
+    <label>Name</label>
+    <input type="text" name="user_name">
+    <label>Email</label>
+    <input type="email" name="user_email">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send">
+  </form>
     </div>
       </div>
       <div class="flex flex-col w-full xl:w-2/5">
