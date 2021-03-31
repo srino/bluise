@@ -98,6 +98,7 @@ import { MetaInfo } from 'vue-meta';
   head(): MetaInfo {
     return {
       title: this.page.title,
+      avatar:this.page.avatar,
       meta: [
         {
           hid: 'description',
